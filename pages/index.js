@@ -1,7 +1,8 @@
+import { Box, Heading } from "@chakra-ui/react"
 export default function Home() {
   return (
-    <div >
-      <h1>Hola</h1>
-    </div>
+    <Box>
+      <Heading as="h1" size="2xl">Hola</Heading>
+    </Box>
   )
 }
