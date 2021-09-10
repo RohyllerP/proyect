@@ -7,7 +7,7 @@ export default function Layout({children,title,description}) {
   return (
     <Box>
       <Head>
-        <title>Home</title>
+        <title>Inicio</title>
         <meta charSet="utf-8"/> 
         <meta name="viewport" content="initial-scale=1.0, width=device-width" />
         <meta name="keywords" content="Animales,tipos de animales,clasificacion de animales" /> 

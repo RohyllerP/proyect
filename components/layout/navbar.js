@@ -47,17 +47,17 @@ export default function Navbar(){
                 </Link>
             </Box>
             <Box px="5" pt="2">
-                <Link href="/contacto">
+                <Link href="#">
                   <a>Contacto</a>
                 </Link>
             </Box>
             <Box px="5" pt="2">
-                <Link href="/servicios">
+                <Link href="#">
                   <a>Servicio</a>
                 </Link>
             </Box>
             <Box px="2" pt="2">
-                <Link href="/login">
+                <Link href="#">
                   <a><FaUserCircle size="28px"/></a>
                 </Link>
             </Box>
@@ -92,17 +92,17 @@ export default function Navbar(){
                 </Link>
               </Box>
               <Box py="25px">
-                  <Link href="/contacto">
+                  <Link href="#">
                     <a>Contacto</a>
                   </Link>
               </Box>
               <Box py="25px">
-                  <Link href="/servicios">
+                  <Link href="#">
                     <a>Servicio</a>
                   </Link>
               </Box>
               <Box py="25px">
-                  <Link href="/login">
+                  <Link href="#">
                     <a><FaUserCircle size="28px" /></a>
                   </Link>
               </Box>  

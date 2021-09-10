@@ -51,7 +51,6 @@ export default function Home(){
       </Box>
     <Box>
       <Box py="10" >
-          // card animal
       </Box>
       <Box w="100%">
         <Box>
