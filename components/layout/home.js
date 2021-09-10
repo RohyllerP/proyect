@@ -23,8 +23,6 @@ useColorModeValue,
 } from "@chakra-ui/react";
 import { ImArrowDown2 } from "react-icons/im";
 import imgAnimal from "../../public/img/Animalia.jpg";
-import CardAnimal from "../cards/animals.js";
-import TiposDeAnimales from "../tipos/index.js";
 import Head from "next/head";
 
 export default function Home(){
@@ -54,7 +52,7 @@ export default function Home(){
       </Box>
     <Box>
       <Box py="10" >
-          <CardAnimal />
+          // card animal
       </Box>
       <Box w="100%">
         <Box>
@@ -96,7 +94,6 @@ export default function Home(){
       <Box p="10">
         <Box>
           <Heading as="h3" pb="3"><Text as="u">Tipos de animales</Text></Heading>
-          <TiposDeAnimales /> 
         </Box>
       </Box>
     </Box>
