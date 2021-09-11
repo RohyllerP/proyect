@@ -29,7 +29,7 @@ export default function Navbar(){
   const btnRef = React.useRef()
   const { colorMode, toggleColorMode } = useColorMode();
   const bg = useColorModeValue("#065666","gray.800");
-  const bgTwo = useColorModeValue("blue.400","gray.800");
+  const bgTwo = useColorModeValue("colors.primary","gray.800");
 
 	return(
 	<Flex p="5" bg={bg} color="white">
@@ -57,7 +57,7 @@ export default function Navbar(){
                 </Link>
             </Box>
             <Box px="2" pt="2">
-                <Link href="#">
+                <Link href="/login">
                   <a><FaUserCircle size="28px"/></a>
                 </Link>
             </Box>
@@ -82,28 +82,28 @@ export default function Navbar(){
       <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="md">
         <DrawerOverlay/>
         <DrawerContent bg={bgTwo}>
-          <DrawerCloseButton mt="2"/>
-          <DrawerHeader borderBottomWidth="1px">Menu</DrawerHeader>
+          <DrawerCloseButton color="white" mt="2"/>
+          <DrawerHeader borderBottomWidth="1px" color="white">Menu</DrawerHeader>
           <DrawerBody>
           <Box>
-              <Box py="25px">
+              <Box py="25px" color="white">
                 <Link href="/">
                   <a>Inicio</a>
                 </Link>
               </Box>
-              <Box py="25px">
+              <Box py="25px" color="white">
                   <Link href="/contacto">
                     <a>Contacto</a>
                   </Link>
               </Box>
-              <Box py="25px">
+              <Box py="25px" color="white">
                   <Link href="#">
                     <a>Servicio</a>
                   </Link>
               </Box>
               <Box py="25px">
-                  <Link href="#">
-                    <a><FaUserCircle size="28px" /></a>
+                  <Link href="/login">
+                    <a><FaUserCircle color="white" size="28px" /></a>
                   </Link>
               </Box>  
               <Box>
@@ -112,6 +112,7 @@ export default function Navbar(){
                 isRound='true'
                 size='lg'
                 alignSelf='flex-end'
+                bg={bg}
                 color="colors.secondary"
                 onClick={toggleColorMode}
               />
