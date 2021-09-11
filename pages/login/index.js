@@ -65,7 +65,7 @@ export default function LoginForm(){
 				      />
 				      <InputRightElement mr="2">
 				        <Button bg={bg}  size="sm" onClick={handleClick}>
-				          {show ? <RiEyeFill color={colorTwo} fontSize="27px" color="blue.400" /> : <RiEyeOffFill fontSize="27px" color="blue.400"/> }
+				          {show ? <RiEyeFill color={colorTwo} fontSize="27px" /> : <RiEyeOffFill fontSize="27px" color={colorTwo}/> }
 				        </Button>
 				      </InputRightElement>
 				    </InputGroup>
