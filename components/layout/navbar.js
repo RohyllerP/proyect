@@ -92,7 +92,7 @@ export default function Navbar(){
                 </Link>
               </Box>
               <Box py="25px">
-                  <Link href="#">
+                  <Link href="/contacto">
                     <a>Contacto</a>
                   </Link>
               </Box>
