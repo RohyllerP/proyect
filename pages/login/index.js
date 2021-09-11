@@ -30,6 +30,7 @@ export default function LoginForm(){
  	const { toggleColorMode } = useColorMode();
   	const bg = useColorModeValue("white","#171923");
   	const color = useColorModeValue("black","blue.500");
+  	const colorTwo = useColorModeValue("black","white");
 	return (
 	  <Box py="20px">
 	  	<Head>
@@ -64,7 +65,7 @@ export default function LoginForm(){
 				      />
 				      <InputRightElement mr="2">
 				        <Button bg={bg}  size="sm" onClick={handleClick}>
-				          {show ? <RiEyeFill fontSize="27px" color="blue.400" /> : <RiEyeOffFill fontSize="27px" color="blue.400"/> }
+				          {show ? <RiEyeFill color={colorTwo} fontSize="27px" color="blue.400" /> : <RiEyeOffFill fontSize="27px" color="blue.400"/> }
 				        </Button>
 				      </InputRightElement>
 				    </InputGroup>
