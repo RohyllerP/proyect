@@ -16,10 +16,23 @@ useColorModeValue,
 } from "@chakra-ui/react";
 import { Formik, Form, Field } from 'formik';
 import Head from "next/head";
+import emailjs from "emailjs-com";
 
 const Formulario = () => {
   const { toggleColorMode } = useColorMode();
   const bg = useColorModeValue("white","#171923");
+
+
+	function sendEmail(e){
+		e.preventDefault();
+		emailjs.sendForm('service_3g4jgrq','template_n5ktgcz',e.target, 'user_UushOVdjmrVkrkuAorUtm')
+		.then((result) => {
+			console.log(result.text);
+		}, (error) => {
+			console.log(error.text);
+		});
+		e.target.reset();
+	}
   return(
 		<Box pt="10" position="static">
 		 	<Head>
@@ -30,7 +43,7 @@ const Formulario = () => {
 						nombre: '',
 						apellido: '',
 						correo: '',
-						text: '',
+						subject: '',
 					}}
 					validate={(valores) => {
 						let errores = {};
@@ -54,12 +67,6 @@ const Formulario = () => {
 						}
 						return errores;
 					}}
-					onSubmit={(valores, {resetForm}) => {
-						console.log(valores)
-						resetForm();
-						console.log('formulario enviado')
-					}}
-
 				>
 					{( {values, errors,touched, handleSubmit,handleChange, handleBlur} ) => (
 						<Center>
@@ -72,7 +79,7 @@ const Formulario = () => {
 							<Box align="center" >
 									<Heading as="h1" size="2xl"  pb="10" >Formulario de contacto</Heading>
 							</Box>
-							<Form onSubmit={handleSubmit}>
+							<Form onSubmit={sendEmail}>
 							<Stack>
 							    <Flex>
 							    <FormControl id="name" w="50%" mr="5" isRequired>
@@ -116,11 +123,11 @@ const Formulario = () => {
 									<FormLabel>Comentario</FormLabel>
 									<Textarea 
 									type="text" 
-									name="text" 
+									name="subject" 
 									placeholder="Comentario" 
-									value={values.text}
+									value={values.subject}
 									onChange={handleChange}
-			  						onBlur={handleBlur}
+			  					onBlur={handleBlur}
 			  					/>
 								</FormControl>
 								<Button size="xl" variant="primary" type="submit">Enviar</Button>
