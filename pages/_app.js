@@ -1,4 +1,4 @@
-import { ChakraProvider,ColorModeScript } from "@chakra-ui/react"
+import { ChakraProvider,ColorModeScript } from "@chakra-ui/react";
 import Layout from "../components/layout/index";
 import { theme } from '../styles/theme/index.js';
 
