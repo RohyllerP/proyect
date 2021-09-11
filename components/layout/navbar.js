@@ -52,7 +52,7 @@ export default function Navbar(){
                 </Link>
             </Box>
             <Box px="5" pt="2">
-                <Link href="/servicio">
+                <Link href="/servicios">
                   <a>Servicio</a>
                 </Link>
             </Box>
@@ -97,7 +97,7 @@ export default function Navbar(){
                   </Link>
               </Box>
               <Box py="25px" color="white">
-                  <Link href="/servicio">
+                  <Link href="/servicios">
                     <a>Servicio</a>
                   </Link>
               </Box>
