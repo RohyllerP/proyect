@@ -47,7 +47,7 @@ export default function Navbar(){
                 </Link>
             </Box>
             <Box px="5" pt="2">
-                <Link href="#">
+                <Link href="/contacto">
                   <a>Contacto</a>
                 </Link>
             </Box>
