@@ -20,8 +20,6 @@ Text,
 useColorMode,
 useColorModeValue,
 } from "@chakra-ui/react";
-import { FiLock } from 'react-icons/fi';
-import { HiOutlineMail } from 'react-icons/hi';
 import { RiEyeFill,RiEyeOffFill } from 'react-icons/ri';
 import Head from "next/head";
 
@@ -49,7 +47,7 @@ export default function LoginForm(){
 		  			<InputGroup>
 		  			  <InputLeftElement
 					    pointerEvents="none"
-					    children={<HiOutlineMail color="gray.300" />}
+					    children="✉"
 					   />
 		  			  <Input name="email" type="email" placeholder="Correo"/>
 		  			</InputGroup>
@@ -58,7 +56,7 @@ export default function LoginForm(){
 		  			<InputGroup> 
 		  			  <InputLeftElement
 					     pointerEvents="none"
-					     children={<FiLock color="gray.300" />}
+					     children="🔒"
 					  />
 				      <Input
 				        pr="4.5rem"
