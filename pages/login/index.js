@@ -45,19 +45,17 @@ export default function LoginForm(){
 	  			<Stack my="4" spacing="6">
 	  			<FormControl id="email">
 		  			<InputGroup>
-		  			  <InputLeftElement
-					    pointerEvents="none"
-					    children="✉"
-					   />
+		  			  <InputLeftElement pointerEvents="none">
+		  			  	<Box>✉</Box>
+					  </InputLeftElement>
 		  			  <Input name="email" type="email" placeholder="Correo"/>
 		  			</InputGroup>
 		  		</FormControl>
 		  		<FormControl id="password">
 		  			<InputGroup> 
-		  			  <InputLeftElement
-					     pointerEvents="none"
-					     children="🔒"
-					  />
+		  			  <InputLeftElement pointerEvents="none">
+		  			  	<Box>🔒</Box>
+					  </InputLeftElement>
 				      <Input
 				        pr="4.5rem"
 				        type={show ? "text" : "password"}
