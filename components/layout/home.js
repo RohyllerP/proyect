@@ -23,6 +23,7 @@ useColorModeValue,
 import { ImArrowDown2 } from "react-icons/im";
 import CardAnimal from "../cards/animals.js";
 import imgAnimal from "../../public/img/Animalia.jpg";
+import TiposDeAnimales from "../tipos/index.js";
 import Head from "next/head";
 
 export default function Home(){
@@ -94,6 +95,9 @@ export default function Home(){
       <Box p="10">
         <Box>
           <Heading as="h3" pb="3"><Text as="u">Tipos de animales</Text></Heading>
+          <Box>
+            <TiposDeAnimales />
+          </Box>
         </Box>
       </Box>
     </Box>
