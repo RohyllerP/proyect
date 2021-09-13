@@ -77,7 +77,7 @@ export default function Navbar(){
       colorScheme="teal" 
       onClick={onOpen}
       display={['flex','flex','none','none']}>
-        Open
+        Menu
       </Button>
       <Drawer placement="right" onClose={onClose} isOpen={isOpen} size="md">
         <DrawerOverlay/>
