@@ -32,19 +32,19 @@ export default function Footer(){
 					<Box>
 						<Breadcrumb>
 							<BreadcrumbItem>
-								<BreadcrumbLink href="#">
+								<BreadcrumbLink href="https://www.facebook.com/profile.php?id=100017543351094">
 								Facebook
 								</BreadcrumbLink>
 							</BreadcrumbItem>
 
 							<BreadcrumbItem>
-								<BreadcrumbLink href="#">
+								<BreadcrumbLink href="https://www.instagram.com/rohyller_p/?hl=es">
 								Instagram
 								</BreadcrumbLink>
 							</BreadcrumbItem>
 
 						<BreadcrumbItem>
-								<BreadcrumbLink href="#">
+								<BreadcrumbLink href="https://msng.link/o/?Rohyller_P=tg">
 								Telegram
 								</BreadcrumbLink>
 						</BreadcrumbItem>
